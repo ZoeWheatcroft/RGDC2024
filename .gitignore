@@ -1,0 +1,10 @@
+.vs/
+characcter.png
+/character.ong
+*.png
+Build/
+*/Build
+**/Build
+Build/*/file.txt
+!*.png
+!Build/file.txt
