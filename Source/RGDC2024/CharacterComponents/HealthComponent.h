@@ -52,6 +52,7 @@ protected:
 	virtual void BeginPlay() override;
 
 private:
+	UFUNCTION()
 	void TakeDamageHandler(
 		AActor* DamagedActor,
 		float Damage,
