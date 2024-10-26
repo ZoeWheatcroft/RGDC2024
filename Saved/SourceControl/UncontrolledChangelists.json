@@ -5,6 +5,10 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"D:/RGDC2024/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset",
+				"D:/RGDC2024/Content/LVL_PlayerControllerTest.umap",
+				"D:/RGDC2024/Content/PBController/BP_PlayerController.uasset",
+				"D:/RGDC2024/Content/PBController/BP_PlayerCharacter.uasset",
 				"D:/Profiles/ifm1110/Desktop/RGDC2024/Content/PBController/BP_PlayerCharacter.uasset",
 				"D:/Profiles/ifm1110/Desktop/RGDC2024/Content/PBController/PB_PlayerController.uasset",
 				"D:/Profiles/ifm1110/Desktop/RGDC2024/Content/PBController/BP_PlayerController.uasset",
@@ -158,8 +162,7 @@
 				"D:/Profiles/ceb9515/Documents/RGDC2024/Content/__ExternalActors__/Chargul/NewMap/5/YO/WLRNU110QGGPEX0OXK0UN6.uasset",
 				"D:/Profiles/ceb9515/Documents/RGDC2024/Content/__ExternalActors__/Chargul/NewMap/A/GV/TXTTJ3T7UMAJBTVLLIPNLK.uasset",
 				"D:/Profiles/ceb9515/Documents/RGDC2024/Content/Chargul/NewMap.umap",
-				"D:/Profiles/ceb9515/Documents/RGDC2024/Content/Chargul/BP_TargetDummy.uasset",
-				"D:/RGDC2024/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset"
+				"D:/Profiles/ceb9515/Documents/RGDC2024/Content/Chargul/BP_TargetDummy.uasset"
 			]
 		}
 	]

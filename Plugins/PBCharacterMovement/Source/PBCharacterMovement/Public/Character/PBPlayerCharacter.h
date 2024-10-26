@@ -149,7 +149,7 @@ public:
 
 	float GetDefaultBaseEyeHeight() const { return DefaultBaseEyeHeight; }
 
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable)
 	void ToggleNoClip();
 
 	UFUNCTION(Category = "Player Movement", BlueprintPure)
