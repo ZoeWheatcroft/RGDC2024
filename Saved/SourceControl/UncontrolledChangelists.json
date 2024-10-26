@@ -5,6 +5,14 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"D:/Profiles/ifm1110/Desktop/RGDC2024/Content/FPSController/IMC_FPSMappingContext.uasset",
+				"D:/Profiles/ifm1110/Desktop/RGDC2024/Content/FPSController/BP_FPSController.uasset",
+				"D:/Profiles/ifm1110/Desktop/RGDC2024/Content/FPSController/LVL_ControllerTestingLevel.umap",
+				"D:/Profiles/ifm1110/Desktop/RGDC2024/Content/FPSController/IA_LookPlayerInputAction.uasset",
+				"D:/Profiles/ifm1110/Desktop/RGDC2024/Content/FPSController/BP_FPSPawn.uasset",
+				"D:/Profiles/ifm1110/Desktop/RGDC2024/Content/FPSController/BP_FPSPlayerController.uasset",
+				"D:/Profiles/ifm1110/Desktop/RGDC2024/Content/BP_RGDCGameMode.uasset",
+				"D:/Profiles/ifm1110/Desktop/RGDC2024/Content/FPSController/IA_HorizontalInputAction.uasset",
 				"D:/RGDC2024/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset"
 			]
 		}

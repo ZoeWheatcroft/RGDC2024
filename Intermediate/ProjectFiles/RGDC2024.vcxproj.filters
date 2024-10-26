@@ -11,6 +11,8 @@
     <None Include="..\..\Source\RGDC2024Editor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitignore" />
+    <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -37,6 +39,27 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\RGDC2024\RGDC2024.h">
       <Filter>Source\RGDC2024</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RGDC2024\RGDCGameMode.cpp">
+      <Filter>Source\RGDC2024</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RGDC2024\RGDCGameMode.h">
+      <Filter>Source\RGDC2024</Filter>
+    </ClInclude>
+    <Filter Include="Source\RGDC2024\FPSController">
+      <UniqueIdentifier>{4AAC20D8-36E6-3605-AB3C-F11ADED004B5}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\RGDC2024\FPSController\FPSController.cpp">
+      <Filter>Source\RGDC2024\FPSController</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RGDC2024\FPSController\FPSController.h">
+      <Filter>Source\RGDC2024\FPSController</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RGDC2024\FPSController\FPSPlayerController.cpp">
+      <Filter>Source\RGDC2024\FPSController</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RGDC2024\FPSController\FPSPlayerController.h">
+      <Filter>Source\RGDC2024\FPSController</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
