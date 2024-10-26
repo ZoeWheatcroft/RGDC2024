@@ -6,7 +6,8 @@
 #include "Components/ActorComponent.h"
 #include "HealthComponent.generated.h"
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_SixParams(FOnHeaalthChangedSignature, UHealthComponent*, HealthComponent, float, HealthBefore, float, HealthDelta, const class UDamageType*, DamageType, class AController*, InstigatedBy, AActor*, DamageCauser);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDied);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnHit, float, DamageTaken);
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class RGDC2024_API UHealthComponent : public UActorComponent
@@ -23,10 +24,20 @@ public:
 	UPROPERTY(BlueprintReadOnly, Category="Stats")
 	float Health;
 
-	UPROPERTY()
+	UPROPERTY(BlueprintAssignable)
+	FOnDied OnDied;
+
+	UPROPERTY(BlueprintAssignable)
+	FOnHit OnHit;
 
 	// Sets default values for this component's properties
 	UHealthComponent();
+
+	UFUNCTION(BlueprintCallable)
+	float GetHealth() const;
+
+	UFUNCTION(BlueprintCallable)
+	void Kill();
 
 	// subtract abs(amount) from health value
 	UFUNCTION(BlueprintCallable)
