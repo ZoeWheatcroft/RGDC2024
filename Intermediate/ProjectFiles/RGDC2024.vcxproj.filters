@@ -11,6 +11,8 @@
     <None Include="..\..\Source\RGDC2024Editor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitignore" />
+    <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -29,6 +31,12 @@
     <Filter Include="Source\RGDC2024">
       <UniqueIdentifier>{AC810E7B-8065-3954-A404-260181CD0E4B}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\RGDC2024\BTS_CheckRangedAttack.cpp">
+      <Filter>Source\RGDC2024</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RGDC2024\BTS_CheckRangedAttack.h">
+      <Filter>Source\RGDC2024</Filter>
+    </ClInclude>
     <None Include="..\..\Source\RGDC2024\RGDC2024.Build.cs">
       <Filter>Source\RGDC2024</Filter>
     </None>
@@ -37,6 +45,30 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\RGDC2024\RGDC2024.h">
       <Filter>Source\RGDC2024</Filter>
+    </ClInclude>
+    <Filter Include="Source\RGDC2024\AI">
+      <UniqueIdentifier>{28A603CA-A82F-3A87-8ABC-17E45BEF1C88}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\RGDC2024\AI\BaseAICharacter.cpp">
+      <Filter>Source\RGDC2024\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RGDC2024\AI\BaseAICharacter.h">
+      <Filter>Source\RGDC2024\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RGDC2024\AI\BaseAIController.cpp">
+      <Filter>Source\RGDC2024\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RGDC2024\AI\BaseAIController.h">
+      <Filter>Source\RGDC2024\AI</Filter>
+    </ClInclude>
+    <Filter Include="Source\RGDC2024\Player">
+      <UniqueIdentifier>{79021B16-A4EA-317D-9DC2-4A18B2E39DFD}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\RGDC2024\Player\FPSPlayerController.cpp">
+      <Filter>Source\RGDC2024\Player</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RGDC2024\Player\FPSPlayerController.h">
+      <Filter>Source\RGDC2024\Player</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

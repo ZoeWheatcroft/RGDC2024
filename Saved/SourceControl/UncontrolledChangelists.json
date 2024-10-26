@@ -5,7 +5,16 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"D:/RGDC2024/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset"
+				"D:/RGDC2024/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset",
+				"D:/RGDC2024/Content/AI/BaseAIEnemy/BB_BaseEnemyBlackboard.uasset",
+				"D:/RGDC2024/Content/AI/BaseAIEnemy/BT_BaseEnemyBehaviorTree.uasset",
+				"D:/RGDC2024/Content/AI/BaseAIEnemy/BP_BaseAICharacter.uasset",
+				"D:/RGDC2024/Content/AI/BaseAIEnemy/BP_BaseAIController.uasset",
+				"D:/RGDC2024/Content/Levels/LV_ZoeTesting.umap",
+				"D:/RGDC2024/Content/AI/BTTasks/CheckWithinRange.uasset",
+				"D:/RGDC2024/Content/AI/BTDecorator_Test.uasset",
+				"D:/RGDC2024/Content/AI/BaseAIEnemy/BP_BaseAIBrainController.uasset",
+				"D:/RGDC2024/Content/Levels/LV_ZoeTestingLevel.umap"
 			]
 		}
 	]
