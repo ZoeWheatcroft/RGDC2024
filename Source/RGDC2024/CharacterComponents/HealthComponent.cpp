@@ -6,7 +6,7 @@
 // Sets default values for this component's properties
 UHealthComponent::UHealthComponent()
 {
-	MaxHealth = 10.f;
+	MaxHealth = 10.0f;
 	InitialHealth = MaxHealth;
 	Health = InitialHealth;
 }
@@ -34,10 +34,12 @@ void UHealthComponent::Damage(float amount)
 	if (amount == 0.f)
 		return;
 	amount = FMath::Abs(amount);
-	OnHit.Broadcast(FMath::Clamp(amount, 0, Health));
 	Health -= amount;
 	if (Health <= 0)
 		Kill();
+
+	OnHit.Broadcast(FMath::Clamp(amount, 0, Health));
+
 }
 
 void UHealthComponent::Heal(float amount)
@@ -46,6 +48,9 @@ void UHealthComponent::Heal(float amount)
 		return;
 	amount = FMath::Abs(amount);
 	Health += amount;
+
+	OnHeal.Broadcast(FMath::Clamp(amount, 0, Health));
+
 }
 
 void UHealthComponent::TakeDamageHandler(

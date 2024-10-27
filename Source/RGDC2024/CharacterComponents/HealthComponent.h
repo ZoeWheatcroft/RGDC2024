@@ -8,6 +8,7 @@
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDied);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnHit, float, DamageTaken);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnHeal, float, DamageHealed);
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class RGDC2024_API UHealthComponent : public UActorComponent
@@ -15,7 +16,7 @@ class RGDC2024_API UHealthComponent : public UActorComponent
 	GENERATED_BODY()
 
 public:	
-	UPROPERTY(VisibleAnywhere, Category="Stats")
+	UPROPERTY(EditAnywhere, Category="Stats")
 	float MaxHealth;
 
 	UPROPERTY(VisibleAnywhere, Category="Stats")
@@ -29,6 +30,9 @@ public:
 
 	UPROPERTY(BlueprintAssignable)
 	FOnHit OnHit;
+
+	UPROPERTY(BlueprintAssignable)
+	FOnHit OnHeal;
 
 	// Sets default values for this component's properties
 	UHealthComponent();
