@@ -18,11 +18,6 @@ void UHealthComponent::BeginPlay()
 	GetOwner()->OnTakeAnyDamage.AddDynamic(this, &UHealthComponent::TakeDamageHandler);
 }
 
-float UHealthComponent::GetHealth() const
-{
-	return Health;
-}
-
 void UHealthComponent::Kill()
 {
 	OnDied.Broadcast();
@@ -56,13 +51,13 @@ void UHealthComponent::Heal(float amount)
 void UHealthComponent::SetMaxHealth(float newMaxHealth)
 {
 	MaxHealth = newMaxHealth;
-	Health = MaxHealth;
 }
 
-float UHealthComponent::GetMaxHealth()
+float UHealthComponent::GetHealth()
 {
-	return MaxHealth;
+	return Health;
 }
+
 
 void UHealthComponent::TakeDamageHandler(
 	AActor* DamagedActor,

@@ -38,9 +38,6 @@ public:
 	UHealthComponent();
 
 	UFUNCTION(BlueprintCallable)
-	float GetHealth() const;
-
-	UFUNCTION(BlueprintCallable)
 	void Kill();
 
 	// subtract abs(amount) from health value
@@ -55,7 +52,7 @@ public:
 	void SetMaxHealth(float newMaxHealth);
 
 	UFUNCTION(BlueprintCallable)
-	float GetMaxHealth();
+	float GetHealth();
 
 protected:
 	// Called when the game starts
