@@ -53,6 +53,17 @@ void UHealthComponent::Heal(float amount)
 
 }
 
+void UHealthComponent::SetMaxHealth(float newMaxHealth)
+{
+	MaxHealth = newMaxHealth;
+	Health = MaxHealth;
+}
+
+float UHealthComponent::GetMaxHealth()
+{
+	return MaxHealth;
+}
+
 void UHealthComponent::TakeDamageHandler(
 	AActor* DamagedActor,
 	float Damage,

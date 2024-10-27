@@ -51,6 +51,12 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void Heal(float amount);
 
+	UFUNCTION(BlueprintCallable)
+	void SetMaxHealth(float newMaxHealth);
+
+	UFUNCTION(BlueprintCallable)
+	float GetMaxHealth();
+
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
