@@ -17,5 +17,7 @@ void ABaseAIController::BeginPlay()
 	if (MyPawn)
 	{
 		GetBlackboardComponent()->SetValueAsVector("PlayerLocation", MyPawn->GetActorLocation());
+		GetBlackboardComponent()->SetValueAsObject("Player", MyPawn);
+
 	}
 }
